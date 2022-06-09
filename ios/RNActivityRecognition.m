@@ -13,9 +13,8 @@
     return dispatch_get_main_queue();
 }
 
-(BOOL)requiresMainQueueSetup
-{
-    return YES;
++ (BOOL)requiresMainQueueSetup {
+    return true;
 }
 
 RCT_EXPORT_MODULE()
